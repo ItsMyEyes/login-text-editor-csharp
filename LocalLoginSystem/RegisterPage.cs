@@ -12,8 +12,10 @@ namespace LocalLoginSystem
 {
     public partial class RegisterPage : Form
     {
+        private readonly List<string> usernameList = new List<string>();
         public RegisterPage()
         {
+            loadUser();
             InitializeComponent();
             this.Text = "Register New User";
         }
@@ -33,8 +35,35 @@ namespace LocalLoginSystem
             redirectToHome();
         }
 
+        private void loadUser()
+        {
+            StreamReader sr = new StreamReader("login.txt");
+            // Create an empty string which will be filled with a text file line
+            string line;
+
+            // If the text file still has lines...
+            while ((line = sr.ReadLine()) != null)
+            {
+                // split the line with a whitespace
+                string[] components = line.Split("\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                string[] componentsUser = line.Split(",".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                // add the first part of the line to the list of usernames
+                usernameList.Add(componentsUser[0]);
+            }
+
+            // Close the StreamReader
+            sr.Close();
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+            if (usernameList.Contains(textBox1.Text))
+            {
+                textBox1.Text = String.Empty;
+                MessageBox.Show("Please Search another unique username");
+                return;
+            }
             string username = textBox1.Text;
             string password = textBox2.Text;
             string repassword = textBox3.Text;

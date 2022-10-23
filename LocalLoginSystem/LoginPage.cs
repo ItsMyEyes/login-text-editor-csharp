@@ -91,6 +91,7 @@ namespace LocalLoginSystem
             }
             else
                 // Show the error message
+                textBox2.Text = String.Empty;
                 MessageBox.Show("The username and/or password is incorrect.");
         }
 
@@ -107,6 +108,31 @@ namespace LocalLoginSystem
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (usernameList.Contains(textBox1.Text) && passwordList.Contains(textBox2.Text) && passwordList[usernameList.IndexOf(textBox1.Text)] == textBox2.Text)
+                {
+                    this.Hide();
+                    string role = roleList[usernameList.IndexOf(textBox1.Text)];
+                    int index = usernameList.IndexOf(textBox1.Text);
+                    userDetail.Add(usernameList[index]);
+                    userDetail.Add(roleList[index]);
+                    userDetail.Add(firstNameList[index]);
+                    userDetail.Add(lastNameList[index]);
+                    userDetail.Add(dateList[index]);
+
+                    TextEditor form2 = new TextEditor(userDetail);
+                    form2.Closed += (s, args) => this.Close();
+                    form2.Show();
+                }
+                else
+                    // Show the error message
+                    MessageBox.Show("The username and/or password is incorrect.");
+            }
         }
     }
 }

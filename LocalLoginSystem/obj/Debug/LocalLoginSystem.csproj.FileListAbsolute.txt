@@ -12,8 +12,6 @@ C:\Users\oshie\Source\Repos\WindowsForms\LocalLoginSystem\LocalLoginSystem\obj\D
 C:\Users\oshie\source\repos\WindowsForms\LocalLoginSystem\LocalLoginSystem\obj\Debug\LocalLoginSystem.TextEditor.resources
 C:\Users\oshie\source\repos\WindowsForms\LocalLoginSystem\LocalLoginSystem\obj\Debug\LocalLoginSystem.AboutBox2.resources
 C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\LocalLoginSystem.csproj.AssemblyReference.cache
-C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\LocalLoginSystem.AboutBox1.resources
-C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\LocalLoginSystem.AboutBox2.resources
 C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\LocalLoginSystem.LoginPage.resources
 C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\LocalLoginSystem.TextEditor.resources
 C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\LocalLoginSystem.RegisterPage.resources
@@ -24,3 +22,5 @@ C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\Loca
 C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\LocalLoginSystem.pdb
 C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\bin\Debug\LocalLoginSystem.exe
 C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\bin\Debug\LocalLoginSystem.pdb
+C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\LocalLoginSystem.AboutTextEditor.resources
+C:\Users\oshie\source\repos\WindowsFormWithLogin\LocalLoginSystem\obj\Debug\LocalLoginSystem.AboutMe.resources

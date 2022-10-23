@@ -8,19 +8,14 @@ using System.Windows.Forms;
 
 namespace LocalLoginSystem
 {
-    partial class AboutBox1 : Form
+    partial class AboutTextEditor : Form
     {
 
 
-        public AboutBox1()
+        public AboutTextEditor()
         {
             InitializeComponent();
-            this.Text = String.Format("About {0}", AssemblyTitle);
-            this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = "Copyright 2022";
-            this.labelCompanyName.Text = "Your Name";
-            this.textBoxDescription.Text = "Hello world";
+            textBoxDescription.Text = "Hello my name is Veren Fiani Anjelika, with student number 13647007, this is my text editor";
         }
 
         #region Assembly Attribute Accessors
@@ -99,6 +94,11 @@ namespace LocalLoginSystem
         private void okButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBoxDescription_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

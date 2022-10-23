@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace LocalLoginSystem
 {
-    partial class AboutBox2 : Form
+    partial class AboutMe : Form
     {
-        public AboutBox2(List<string> UserDetail)
+        public AboutMe(List<string> UserDetail)
         {
             InitializeComponent();
             this.Text = "About Me";
